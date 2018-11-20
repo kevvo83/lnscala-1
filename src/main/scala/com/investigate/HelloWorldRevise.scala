@@ -32,7 +32,7 @@ object HelloWorldRevise extends App with StrictLogging{
       case Some(discountRate) => discountRate
       case None => 1
     }
-    unitPrice * _dcR
+    unitPrice * (1-_dcR)
   }
 
   // This val is of type "Range"
