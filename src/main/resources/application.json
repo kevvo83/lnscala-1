@@ -1,0 +1,6 @@
+{
+  "StreamsConfig":{
+    "APPLICATION_ID_CONFIG":"first-stream-app",
+    "BOOTSTRAP_SERVERS_CONFIG":"uklvadsb0010.uk.dev.net:9092"
+  }
+}
