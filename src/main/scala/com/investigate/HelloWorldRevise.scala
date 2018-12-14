@@ -53,7 +53,7 @@ object HelloWorldRevise extends App with StrictLogging{
   val firstMap: Map[Int, String] = Map(1->"First", 2->"Second", (3,"Third"))
   val secondMap: Map[Int, Float] = Map(4->4.0f)
 
-  firstMap
+  //firstMap
 
   val ThirdMap = firstMap ++ secondMap
   logger.info(s"${ThirdMap}")
