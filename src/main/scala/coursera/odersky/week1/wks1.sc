@@ -38,8 +38,21 @@ object session {
   }
 
   // Function that returns the Sum of Ints of all Numbers between A and B.
-  def sumInts(a: Int, b: Int) = sum((x:Int)=>x,a,b)
-  def sum(f:x=>x, a: Int, b: Int)
+  //def sumInts(a: Int, b: Int) = sum((x:Int)=>x,a,b)
+  //def sum(f:x=>x, a: Int, b: Int)
 
   sumFactorials(1,5)
+
+  def sumInts(a:Int, b:Int, sumSoFar: Int =0):Int = {
+    if (a>b) sumSoFar
+    else sumInts(a+1, b, a+sumSoFar)
+  }
+  def factorial2(a:Int, prodSoFar: Int = 1): Int = {
+    if (a==1) prodSoFar
+    else factorial2(a-1,a*prodSoFar)
+  }
+  sumInts(1,10)
+  factorial2(10)
+
+
 }

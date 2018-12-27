@@ -1,0 +1,3 @@
+object session {
+  a + b 
+}
